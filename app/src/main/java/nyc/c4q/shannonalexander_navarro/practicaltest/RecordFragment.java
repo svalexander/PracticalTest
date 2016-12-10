@@ -9,8 +9,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import nyc.c4q.shannonalexander_navarro.practicaltest.models.AllRecords;
+import nyc.c4q.shannonalexander_navarro.practicaltest.models.Record;
 import nyc.c4q.shannonalexander_navarro.practicaltest.network.VineService;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -25,6 +28,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RecordFragment extends Fragment {
     private static final String VINE_URL = "http://vine.co/";
     private static final String TAG = MainActivity.class.getSimpleName();
+    List<Record> records = new ArrayList<>();
 
     @Nullable
     @Override
@@ -35,6 +39,7 @@ public class RecordFragment extends Fragment {
 
         return root;
     }
+
     private void getTheRecords() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(VINE_URL)
@@ -49,8 +54,10 @@ public class RecordFragment extends Fragment {
             @Override
             public void onResponse(Call<AllRecords> call, Response<AllRecords> response) {
 
+                List<Record> ourRecords = response.body().getAllRecords();
+                records = ourRecords;
                 if (response.isSuccessful()) {
-                    Log.d(TAG, "Success: " + response.body().getAllRecords().toString());
+                    Log.d(TAG, "Success: " + response.body().getAllRecords().size());
                 } else {
                     try {
                         Log.d(TAG, "Error" + response.errorBody().string());
