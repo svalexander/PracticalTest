@@ -13,7 +13,7 @@ public class User {
     private String username;
     @SerializedName("verified")
     @Expose
-    private Integer verified;
+    private int verified;
     @SerializedName("vanityUrls")
     @Expose
     private List<String> vanityUrls = null;
@@ -22,10 +22,10 @@ public class User {
     private String avatarUrl;
     @SerializedName("userId")
     @Expose
-    private Integer userId;
+    private int userId;
     @SerializedName("private")
     @Expose
-    private Integer _private;
+    private int _private;
     @SerializedName("location")
     @Expose
     private String location;
@@ -47,14 +47,14 @@ public class User {
     /**
      * @return The verified
      */
-    public Integer getVerified() {
+    public int getVerified() {
         return verified;
     }
 
     /**
      * @param verified The verified
      */
-    public void setVerified(Integer verified) {
+    public void setVerified(int verified) {
         this.verified = verified;
     }
 
@@ -89,28 +89,28 @@ public class User {
     /**
      * @return The userId
      */
-    public Integer getUserId() {
+    public int getUserId() {
         return userId;
     }
 
     /**
      * @param userId The userId
      */
-    public void setUserId(Integer userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
     /**
      * @return The _private
      */
-    public Integer getPrivate() {
+    public int getPrivate() {
         return _private;
     }
 
     /**
      * @param _private The private
      */
-    public void setPrivate(Integer _private) {
+    public void setPrivate(int _private) {
         this._private = _private;
     }
 

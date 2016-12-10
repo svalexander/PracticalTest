@@ -10,7 +10,7 @@ public class Data {
 
     @SerializedName("count")
     @Expose
-    private Integer count;
+    private int count;
     @SerializedName("anchorStr")
     @Expose
     private String anchorStr;
@@ -25,25 +25,25 @@ public class Data {
     private String backAnchor;
     @SerializedName("anchor")
     @Expose
-    private Integer anchor;
+    private long anchor;
     @SerializedName("nextPage")
     @Expose
-    private Integer nextPage;
+    private int nextPage;
     @SerializedName("size")
     @Expose
-    private Integer size;
+    private int size;
 
     /**
      * @return The count
      */
-    public Integer getCount() {
+    public int getCount() {
         return count;
     }
 
     /**
      * @param count The count
      */
-    public void setCount(Integer count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
@@ -106,42 +106,42 @@ public class Data {
     /**
      * @return The anchor
      */
-    public Integer getAnchor() {
+    public long getAnchor() {
         return anchor;
     }
 
     /**
      * @param anchor The anchor
      */
-    public void setAnchor(Integer anchor) {
+    public void setAnchor(long anchor) {
         this.anchor = anchor;
     }
 
     /**
      * @return The nextPage
      */
-    public Integer getNextPage() {
+    public int getNextPage() {
         return nextPage;
     }
 
     /**
      * @param nextPage The nextPage
      */
-    public void setNextPage(Integer nextPage) {
+    public void setNextPage(int nextPage) {
         this.nextPage = nextPage;
     }
 
     /**
      * @return The size
      */
-    public Integer getSize() {
+    public int getSize() {
         return size;
     }
 
     /**
      * @param size The size
      */
-    public void setSize(Integer size) {
+    public void setSize(int size) {
         this.size = size;
     }
 

@@ -13,7 +13,7 @@ public class Record_ {
     private String username;
     @SerializedName("verified")
     @Expose
-    private Integer verified;
+    private int verified;
     @SerializedName("vanityUrls")
     @Expose
     private List<String> vanityUrls = null;
@@ -22,13 +22,13 @@ public class Record_ {
     private String created;
     @SerializedName("userId")
     @Expose
-    private Integer userId;
+    private int userId;
     @SerializedName("user")
     @Expose
     private User_ user;
     @SerializedName("likeId")
     @Expose
-    private Integer likeId;
+    private int likeId;
 
     /**
      * @return The username
@@ -47,14 +47,14 @@ public class Record_ {
     /**
      * @return The verified
      */
-    public Integer getVerified() {
+    public int getVerified() {
         return verified;
     }
 
     /**
      * @param verified The verified
      */
-    public void setVerified(Integer verified) {
+    public void setVerified(int verified) {
         this.verified = verified;
     }
 
@@ -89,14 +89,14 @@ public class Record_ {
     /**
      * @return The userId
      */
-    public Integer getUserId() {
+    public int getUserId() {
         return userId;
     }
 
     /**
      * @param userId The userId
      */
-    public void setUserId(Integer userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -117,14 +117,14 @@ public class Record_ {
     /**
      * @return The likeId
      */
-    public Integer getLikeId() {
+    public int getLikeId() {
         return likeId;
     }
 
     /**
      * @param likeId The likeId
      */
-    public void setLikeId(Integer likeId) {
+    public void setLikeId(int likeId) {
         this.likeId = likeId;
     }
 

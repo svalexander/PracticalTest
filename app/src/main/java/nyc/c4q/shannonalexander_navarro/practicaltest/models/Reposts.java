@@ -10,7 +10,7 @@ public class Reposts {
 
     @SerializedName("count")
     @Expose
-    private Integer count;
+    private int count;
     @SerializedName("anchorStr")
     @Expose
     private String anchorStr;
@@ -31,19 +31,19 @@ public class Reposts {
     private Object nextPage;
     @SerializedName("size")
     @Expose
-    private Integer size;
+    private int size;
 
     /**
      * @return The count
      */
-    public Integer getCount() {
+    public int getCount() {
         return count;
     }
 
     /**
      * @param count The count
      */
-    public void setCount(Integer count) {
+    public void setCount(int count) {
         this.count = count;
     }
 
@@ -134,14 +134,14 @@ public class Reposts {
     /**
      * @return The size
      */
-    public Integer getSize() {
+    public int getSize() {
         return size;
     }
 
     /**
      * @param size The size
      */
-    public void setSize(Integer size) {
+    public void setSize(int size) {
         this.size = size;
     }
 

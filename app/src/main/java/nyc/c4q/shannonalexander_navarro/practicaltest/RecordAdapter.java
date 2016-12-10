@@ -25,6 +25,7 @@ public class RecordAdapter extends RecyclerView.Adapter {
     }
 
     public RecordAdapter(List<Record> records) {
+
     }
 
     @Override

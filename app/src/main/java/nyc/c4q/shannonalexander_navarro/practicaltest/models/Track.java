@@ -8,19 +8,19 @@ public class Track {
 
     @SerializedName("albumTrackCount")
     @Expose
-    private Integer albumTrackCount;
+    private int albumTrackCount;
     @SerializedName("hasAudioTrackTimeline")
     @Expose
-    private Integer hasAudioTrackTimeline;
+    private int hasAudioTrackTimeline;
     @SerializedName("trackName")
     @Expose
     private String trackName;
     @SerializedName("beatsPerMinute")
     @Expose
-    private Integer beatsPerMinute;
+    private int beatsPerMinute;
     @SerializedName("albumTrackNumber")
     @Expose
-    private Integer albumTrackNumber;
+    private int albumTrackNumber;
     @SerializedName("albumName")
     @Expose
     private String albumName;
@@ -41,36 +41,36 @@ public class Track {
     private String genre;
     @SerializedName("discNumber")
     @Expose
-    private Integer discNumber;
+    private int discNumber;
     @SerializedName("discCount")
     @Expose
-    private Integer discCount;
+    private int discCount;
 
     /**
      * @return The albumTrackCount
      */
-    public Integer getAlbumTrackCount() {
+    public int getAlbumTrackCount() {
         return albumTrackCount;
     }
 
     /**
      * @param albumTrackCount The albumTrackCount
      */
-    public void setAlbumTrackCount(Integer albumTrackCount) {
+    public void setAlbumTrackCount(int albumTrackCount) {
         this.albumTrackCount = albumTrackCount;
     }
 
     /**
      * @return The hasAudioTrackTimeline
      */
-    public Integer getHasAudioTrackTimeline() {
+    public int getHasAudioTrackTimeline() {
         return hasAudioTrackTimeline;
     }
 
     /**
      * @param hasAudioTrackTimeline The hasAudioTrackTimeline
      */
-    public void setHasAudioTrackTimeline(Integer hasAudioTrackTimeline) {
+    public void setHasAudioTrackTimeline(int hasAudioTrackTimeline) {
         this.hasAudioTrackTimeline = hasAudioTrackTimeline;
     }
 
@@ -91,28 +91,28 @@ public class Track {
     /**
      * @return The beatsPerMinute
      */
-    public Integer getBeatsPerMinute() {
+    public int getBeatsPerMinute() {
         return beatsPerMinute;
     }
 
     /**
      * @param beatsPerMinute The beatsPerMinute
      */
-    public void setBeatsPerMinute(Integer beatsPerMinute) {
+    public void setBeatsPerMinute(int beatsPerMinute) {
         this.beatsPerMinute = beatsPerMinute;
     }
 
     /**
      * @return The albumTrackNumber
      */
-    public Integer getAlbumTrackNumber() {
+    public int getAlbumTrackNumber() {
         return albumTrackNumber;
     }
 
     /**
      * @param albumTrackNumber The albumTrackNumber
      */
-    public void setAlbumTrackNumber(Integer albumTrackNumber) {
+    public void setAlbumTrackNumber(int albumTrackNumber) {
         this.albumTrackNumber = albumTrackNumber;
     }
 
@@ -203,28 +203,28 @@ public class Track {
     /**
      * @return The discNumber
      */
-    public Integer getDiscNumber() {
+    public int getDiscNumber() {
         return discNumber;
     }
 
     /**
      * @param discNumber The discNumber
      */
-    public void setDiscNumber(Integer discNumber) {
+    public void setDiscNumber(int discNumber) {
         this.discNumber = discNumber;
     }
 
     /**
      * @return The discCount
      */
-    public Integer getDiscCount() {
+    public int getDiscCount() {
         return discCount;
     }
 
     /**
      * @param discCount The discCount
      */
-    public void setDiscCount(Integer discCount) {
+    public void setDiscCount(int discCount) {
         this.discCount = discCount;
     }
 

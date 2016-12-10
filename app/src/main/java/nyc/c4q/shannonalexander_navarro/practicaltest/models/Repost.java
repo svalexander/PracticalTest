@@ -13,22 +13,22 @@ public class Repost {
     private String username;
     @SerializedName("verified")
     @Expose
-    private Integer verified;
+    private int verified;
     @SerializedName("vanityUrls")
     @Expose
     private List<String> vanityUrls = null;
     @SerializedName("flags|platform_lo")
     @Expose
-    private Integer flagsPlatformLo;
+    private int flagsPlatformLo;
     @SerializedName("repostId")
     @Expose
-    private Integer repostId;
+    private int repostId;
     @SerializedName("avatarUrl")
     @Expose
     private String avatarUrl;
     @SerializedName("userId")
     @Expose
-    private Integer userId;
+    private int userId;
     @SerializedName("profileBackground")
     @Expose
     private String profileBackground;
@@ -40,19 +40,19 @@ public class Repost {
     private User user;
     @SerializedName("postId")
     @Expose
-    private Integer postId;
+    private int postId;
     @SerializedName("ipAddress")
     @Expose
-    private Integer ipAddress;
+    private int ipAddress;
     @SerializedName("flags|platform_hi")
     @Expose
-    private Integer flagsPlatformHi;
+    private int flagsPlatformHi;
     @SerializedName("sourceType")
     @Expose
-    private Integer sourceType;
+    private int sourceType;
     @SerializedName("sourceId")
     @Expose
-    private Integer sourceId;
+    private int sourceId;
 
     /**
      * @return The username
@@ -71,14 +71,14 @@ public class Repost {
     /**
      * @return The verified
      */
-    public Integer getVerified() {
+    public int getVerified() {
         return verified;
     }
 
     /**
      * @param verified The verified
      */
-    public void setVerified(Integer verified) {
+    public void setVerified(int verified) {
         this.verified = verified;
     }
 
@@ -99,28 +99,28 @@ public class Repost {
     /**
      * @return The flagsPlatformLo
      */
-    public Integer getFlagsPlatformLo() {
+    public int getFlagsPlatformLo() {
         return flagsPlatformLo;
     }
 
     /**
      * @param flagsPlatformLo The flags|platform_lo
      */
-    public void setFlagsPlatformLo(Integer flagsPlatformLo) {
+    public void setFlagsPlatformLo(int flagsPlatformLo) {
         this.flagsPlatformLo = flagsPlatformLo;
     }
 
     /**
      * @return The repostId
      */
-    public Integer getRepostId() {
+    public int getRepostId() {
         return repostId;
     }
 
     /**
      * @param repostId The repostId
      */
-    public void setRepostId(Integer repostId) {
+    public void setRepostId(int repostId) {
         this.repostId = repostId;
     }
 
@@ -141,14 +141,14 @@ public class Repost {
     /**
      * @return The userId
      */
-    public Integer getUserId() {
+    public int getUserId() {
         return userId;
     }
 
     /**
      * @param userId The userId
      */
-    public void setUserId(Integer userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -197,70 +197,70 @@ public class Repost {
     /**
      * @return The postId
      */
-    public Integer getPostId() {
+    public int getPostId() {
         return postId;
     }
 
     /**
      * @param postId The postId
      */
-    public void setPostId(Integer postId) {
+    public void setPostId(int postId) {
         this.postId = postId;
     }
 
     /**
      * @return The ipAddress
      */
-    public Integer getIpAddress() {
+    public int getIpAddress() {
         return ipAddress;
     }
 
     /**
      * @param ipAddress The ipAddress
      */
-    public void setIpAddress(Integer ipAddress) {
+    public void setIpAddress(int ipAddress) {
         this.ipAddress = ipAddress;
     }
 
     /**
      * @return The flagsPlatformHi
      */
-    public Integer getFlagsPlatformHi() {
+    public int getFlagsPlatformHi() {
         return flagsPlatformHi;
     }
 
     /**
      * @param flagsPlatformHi The flags|platform_hi
      */
-    public void setFlagsPlatformHi(Integer flagsPlatformHi) {
+    public void setFlagsPlatformHi(int flagsPlatformHi) {
         this.flagsPlatformHi = flagsPlatformHi;
     }
 
     /**
      * @return The sourceType
      */
-    public Integer getSourceType() {
+    public int getSourceType() {
         return sourceType;
     }
 
     /**
      * @param sourceType The sourceType
      */
-    public void setSourceType(Integer sourceType) {
+    public void setSourceType(int sourceType) {
         this.sourceType = sourceType;
     }
 
     /**
      * @return The sourceId
      */
-    public Integer getSourceId() {
+    public int getSourceId() {
         return sourceId;
     }
 
     /**
      * @param sourceId The sourceId
      */
-    public void setSourceId(Integer sourceId) {
+    public void setSourceId(int sourceId) {
         this.sourceId = sourceId;
     }
 

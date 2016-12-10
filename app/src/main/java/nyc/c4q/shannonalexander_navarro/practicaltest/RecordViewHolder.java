@@ -24,7 +24,7 @@ public class RecordViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(final Record record) {
-        likedView.setText(record.getLiked());
+       likedView.setText(record.getLiked());
         userView.setText(record.getUsername());
         layout.setBackgroundResource(Integer.parseInt(record.getProfileBackground()));
     }

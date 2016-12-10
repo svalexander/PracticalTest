@@ -17,13 +17,13 @@ public class AudioTrack {
     private Object deleted;
     @SerializedName("trackId")
     @Expose
-    private Integer trackId;
+    private int trackId;
     @SerializedName("modified")
     @Expose
     private Object modified;
     @SerializedName("numberOfMeasures")
     @Expose
-    private Integer numberOfMeasures;
+    private int numberOfMeasures;
     @SerializedName("track")
     @Expose
     private Track track;
@@ -32,16 +32,16 @@ public class AudioTrack {
     private Double audioOffset;
     @SerializedName("snapToBeat")
     @Expose
-    private Integer snapToBeat;
+    private int snapToBeat;
     @SerializedName("linkId")
     @Expose
-    private Integer linkId;
+    private int linkId;
     @SerializedName("duration")
     @Expose
     private Double duration;
     @SerializedName("averageBpm")
     @Expose
-    private Integer averageBpm;
+    private int averageBpm;
     @SerializedName("videoOffset")
     @Expose
     private Double videoOffset;
@@ -91,14 +91,14 @@ public class AudioTrack {
     /**
      * @return The trackId
      */
-    public Integer getTrackId() {
+    public int getTrackId() {
         return trackId;
     }
 
     /**
      * @param trackId The trackId
      */
-    public void setTrackId(Integer trackId) {
+    public void setTrackId(int trackId) {
         this.trackId = trackId;
     }
 
@@ -119,14 +119,14 @@ public class AudioTrack {
     /**
      * @return The numberOfMeasures
      */
-    public Integer getNumberOfMeasures() {
+    public int getNumberOfMeasures() {
         return numberOfMeasures;
     }
 
     /**
      * @param numberOfMeasures The numberOfMeasures
      */
-    public void setNumberOfMeasures(Integer numberOfMeasures) {
+    public void setNumberOfMeasures(int numberOfMeasures) {
         this.numberOfMeasures = numberOfMeasures;
     }
 
@@ -161,28 +161,28 @@ public class AudioTrack {
     /**
      * @return The snapToBeat
      */
-    public Integer getSnapToBeat() {
+    public int getSnapToBeat() {
         return snapToBeat;
     }
 
     /**
      * @param snapToBeat The snapToBeat
      */
-    public void setSnapToBeat(Integer snapToBeat) {
+    public void setSnapToBeat(int snapToBeat) {
         this.snapToBeat = snapToBeat;
     }
 
     /**
      * @return The linkId
      */
-    public Integer getLinkId() {
+    public int getLinkId() {
         return linkId;
     }
 
     /**
      * @param linkId The linkId
      */
-    public void setLinkId(Integer linkId) {
+    public void setLinkId(int linkId) {
         this.linkId = linkId;
     }
 
@@ -203,14 +203,14 @@ public class AudioTrack {
     /**
      * @return The averageBpm
      */
-    public Integer getAverageBpm() {
+    public int getAverageBpm() {
         return averageBpm;
     }
 
     /**
      * @param averageBpm The averageBpm
      */
-    public void setAverageBpm(Integer averageBpm) {
+    public void setAverageBpm(int averageBpm) {
         this.averageBpm = averageBpm;
     }
 

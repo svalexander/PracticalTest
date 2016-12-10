@@ -14,7 +14,7 @@ public class Loops {
     private Double velocity;
     @SerializedName("onFire")
     @Expose
-    private Integer onFire;
+    private int onFire;
 
     /**
      * @return The count
@@ -47,14 +47,14 @@ public class Loops {
     /**
      * @return The onFire
      */
-    public Integer getOnFire() {
+    public int getOnFire() {
         return onFire;
     }
 
     /**
      * @param onFire The onFire
      */
-    public void setOnFire(Integer onFire) {
+    public void setOnFire(int onFire) {
         this.onFire = onFire;
     }
 

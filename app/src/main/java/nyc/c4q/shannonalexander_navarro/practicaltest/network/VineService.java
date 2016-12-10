@@ -1,6 +1,6 @@
 package nyc.c4q.shannonalexander_navarro.practicaltest.network;
 
-import nyc.c4q.shannonalexander_navarro.practicaltest.models.AllRecords;
+import nyc.c4q.shannonalexander_navarro.practicaltest.models.DataResponse;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
@@ -10,7 +10,7 @@ import retrofit2.http.GET;
 
 public interface VineService {
     @GET("api/timelines/users/918753190470619136")
-   // Call<DataResponse> getAllRecords();
+    Call<DataResponse> getAllRecords();
 
-    Call<AllRecords> getAllRecords();
+  //  Call<AllRecords> getAllRecords();
 }

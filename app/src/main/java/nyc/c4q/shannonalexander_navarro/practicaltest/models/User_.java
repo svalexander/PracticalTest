@@ -8,19 +8,19 @@ public class User_ {
 
     @SerializedName("private")
     @Expose
-    private Integer _private;
+    private int _private;
 
     /**
      * @return The _private
      */
-    public Integer getPrivate() {
+    public int getPrivate() {
         return _private;
     }
 
     /**
      * @param _private The private
      */
-    public void setPrivate(Integer _private) {
+    public void setPrivate(int _private) {
         this._private = _private;
     }
 

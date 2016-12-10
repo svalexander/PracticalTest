@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import nyc.c4q.shannonalexander_navarro.practicaltest.models.AllRecords;
+import nyc.c4q.shannonalexander_navarro.practicaltest.models.DataResponse;
 import nyc.c4q.shannonalexander_navarro.practicaltest.models.Record;
 import nyc.c4q.shannonalexander_navarro.practicaltest.network.VineService;
 import retrofit2.Call;
@@ -54,18 +54,18 @@ public class RecordFragment extends Fragment {
 
         VineService service = retrofit.create(VineService.class);
 
-        Call<AllRecords> call = service.getAllRecords();
+        Call<DataResponse> call = service.getAllRecords();
 
-        call.enqueue(new Callback<AllRecords>() {
+        call.enqueue(new Callback<DataResponse>() {
             @Override
-            public void onResponse(Call<AllRecords> call, Response<AllRecords> response) {
+            public void onResponse(Call<DataResponse> call, Response<DataResponse> response) {
 
-                List<Record> ourRecords = response.body().getAllRecords();
+                List<Record> ourRecords = response.body().getData().getRecords();
                 records = ourRecords;
                 adapter = new RecordAdapter(records);
                 rv.setAdapter(adapter);
                 if (response.isSuccessful()) {
-                    Log.d(TAG, "Success: " + response.body().getAllRecords().size());
+                    Log.d(TAG, "Success: " + response.body().getData().getRecords().size());
                 } else {
                     try {
                         Log.d(TAG, "Error" + response.errorBody().string());
@@ -76,8 +76,8 @@ public class RecordFragment extends Fragment {
             }
 
             @Override
-            public void onFailure(Call<AllRecords> call, Throwable t) {
-                Log.e("FAILURE", "GOT NOTHING");
+            public void onFailure(Call<DataResponse> call, Throwable t) {
+                Log.e("FAILURE", "GOT NOTHING" + t);
 
             }
 
