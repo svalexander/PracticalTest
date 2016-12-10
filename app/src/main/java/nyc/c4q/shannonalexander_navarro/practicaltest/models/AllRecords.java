@@ -10,7 +10,7 @@ import java.util.List;
  * Created by shannonalexander-navarro on 12/10/16.
  */
 
-public class AllRecords {
+public class AllRecords  {
     @SerializedName("records")
     @Expose
     public List<Record> records = new ArrayList<>();

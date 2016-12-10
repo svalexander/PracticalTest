@@ -3,6 +3,8 @@ package nyc.c4q.shannonalexander_navarro.practicaltest;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +30,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RecordFragment extends Fragment {
     private static final String VINE_URL = "http://vine.co/";
     private static final String TAG = MainActivity.class.getSimpleName();
+    RecyclerView rv;
+    RecordAdapter adapter;
     List<Record> records = new ArrayList<>();
 
     @Nullable
@@ -35,6 +39,8 @@ public class RecordFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_record, container, false);
 
+        rv = (RecyclerView) root.findViewById((R.id.rv));
+        rv.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
         getTheRecords();
 
         return root;
@@ -56,6 +62,8 @@ public class RecordFragment extends Fragment {
 
                 List<Record> ourRecords = response.body().getAllRecords();
                 records = ourRecords;
+                adapter = new RecordAdapter(records);
+                rv.setAdapter(adapter);
                 if (response.isSuccessful()) {
                     Log.d(TAG, "Success: " + response.body().getAllRecords().size());
                 } else {
